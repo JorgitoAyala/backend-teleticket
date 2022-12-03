@@ -14,6 +14,8 @@ app.use(express.json());
 
 app.use("/api/eventos", require("./routes/evento"));
 
-app.listen(4000, () => {
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
   console.log("El servidor está corriendo perfectamente");
 });
