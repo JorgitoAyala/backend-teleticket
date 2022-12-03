@@ -6,13 +6,13 @@ const cors = require("cors");
 const app = express();
 
 //Conectamos a la BD
-connnectDB();
+//connnectDB();
 
 //Middlewares
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/eventos", require("./routes/evento"));
+//app.use("/api/eventos", require("./routes/evento"));
 
 const port = process.env.PORT || 4000;
 
